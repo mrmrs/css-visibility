@@ -6,8 +6,7 @@
   "keywords": [
     "css",
     "oocss",
-    "",
-    ""
+    "visibility"
   ],
   "css-visibility": {
     "type": "git",
