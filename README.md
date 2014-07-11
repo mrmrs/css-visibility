@@ -38,7 +38,7 @@ or download the css on github and include in your project.
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .vis-ns          { visibility: visible; }
   .vis-hidden-ns   { visibility: hidden; }
   .vis-collapse-ns { visibility: collapse; }
@@ -52,7 +52,7 @@ or download the css on github and include in your project.
   }
 }
 
-@include break(medium) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .vis-m          { visibility: visible; }
   .vis-hidden-m   { visibility: hidden; }
   .vis-collapse-m { visibility: collapse; }
@@ -66,7 +66,7 @@ or download the css on github and include in your project.
   }
 }
 
-@include break(large) {
+@media screen and (min-width: 64em)  {
   .vis-l          { visibility: visible; }
   .vis-hidden-l   { visibility: hidden; }
   .vis-collapse-l { visibility: collapse; }
