@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-visibility)
 ## File Size
 
 1.8K visibility.css
-1.3K visibility.min.css
+1.3K visibility.min.css 
+271B minified and gzipped
 
 ## The Code
 ```
