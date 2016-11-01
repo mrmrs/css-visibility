@@ -1,7 +1,7 @@
 {
   "name": "css-visibility",
   "style": "visibility.css",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "homepage": "http://github.com/mrmrs/css-visibility",
   "description": "Css module of single purpose classes for visibility",
   "keywords": [
