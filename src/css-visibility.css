@@ -23,12 +23,12 @@
 }
 
 @media screen and (min-width: 48em) {
-  .vis-ns          { visibility: visible; }
-  .vis-hidden-ns   { visibility: hidden; }
-  .vis-collapse-ns { visibility: collapse; }
-  .vis-bf-vis-ns {   backface-visibility: visible; }
-  .vis-bf-hid-ns {   backface-visibility: hidden; }
-  .clip-ns {
+  .vis-s          { visibility: visible; }
+  .vis-hidden-s   { visibility: hidden; }
+  .vis-collapse-s { visibility: collapse; }
+  .vis-bf-vis-s {   backface-visibility: visible; }
+  .vis-bf-hid-s {   backface-visibility: hidden; }
+  .clip-s {
     position: fixed !important;
     _position: absolute !important;
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
