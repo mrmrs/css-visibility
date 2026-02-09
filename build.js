@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { transform } = require('lightningcss');
 
-const srcFile = path.join(__dirname, 'src', 'css-visibility.css');
+const srcFile = path.join(__dirname, 'src', 'visibility.css');
 const distDir = path.join(__dirname, 'dist');
 
 // Read source
@@ -15,22 +15,22 @@ if (!fs.existsSync(distDir)) {
 
 // Unminified — just normalize formatting
 const { code: unminified } = transform({
-  filename: 'css-visibility.css',
+  filename: 'visibility.css',
   code: Buffer.from(source),
   minify: false,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-visibility.css'), unminified);
+fs.writeFileSync(path.join(distDir, 'visibility.css'), unminified);
 
 // Minified
 const { code: minified } = transform({
-  filename: 'css-visibility.css',
+  filename: 'visibility.css',
   code: Buffer.from(source),
   minify: true,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-visibility.min.css'), minified);
+fs.writeFileSync(path.join(distDir, 'visibility.min.css'), minified);
 
 console.log('Build complete:');
-console.log(`  dist/css-visibility.css     ${unminified.length} bytes`);
-console.log(`  dist/css-visibility.min.css ${minified.length} bytes`);
+console.log(`  dist/visibility.css     ${unminified.length} bytes`);
+console.log(`  dist/visibility.min.css ${minified.length} bytes`);
