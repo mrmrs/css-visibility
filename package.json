@@ -1,38 +1,44 @@
 {
   "name": "css-visibility",
-  "style": "visibility.css",
-  "version": "1.0.7",
-  "homepage": "http://github.com/mrmrs/css-visibility",
-  "description": "Css module of single purpose classes for visibility",
+  "version": "2.0.0",
+  "description": "Functional CSS for visibility",
+  "style": "dist/visibility.css",
+  "main": "dist/visibility.css",
+  "exports": {
+    ".": "./dist/visibility.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "visibility"
+    "visibility",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-visibility": {
+  "homepage": "https://github.com/mrmrs/css-visibility",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-visibility.git"
+    "url": "https://github.com/mrmrs/css-visibility.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-visibility/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-visibility/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
