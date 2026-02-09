@@ -22,7 +22,7 @@
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .vis-s          { visibility: visible; }
   .vis-hidden-s   { visibility: hidden; }
   .vis-collapse-s { visibility: collapse; }
@@ -36,7 +36,7 @@
   }
 }
 
-@media screen and (min-width:48em) and (max-width: 64em) {
+@media screen and (min-width:48em) {
   .vis-m          { visibility: visible; }
   .vis-hidden-m   { visibility: hidden; }
   .vis-collapse-m { visibility: collapse; }
@@ -50,7 +50,7 @@
   }
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 96em) {
   .vis-l          { visibility: visible; }
   .vis-hidden-l   { visibility: hidden; }
   .vis-collapse-l { visibility: collapse; }
