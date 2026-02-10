@@ -1,20 +1,20 @@
-.vis {
+.visible {
   visibility: visible;
 }
 
-.vis-hidden {
+.hidden {
   visibility: hidden;
 }
 
-.vis-collapse {
+.visibility-collapse {
   visibility: collapse;
 }
 
-.vis-bf-vis {
+.backface-visible {
   backface-visibility: visible;
 }
 
-.vis-bf-hid {
+.backface-hidden {
   backface-visibility: hidden;
 }
 
@@ -26,23 +26,23 @@
 }
 
 @media screen and (width >= 32em) {
-  .vis-s {
+  .visible-s {
     visibility: visible;
   }
 
-  .vis-hidden-s {
+  .hidden-s {
     visibility: hidden;
   }
 
-  .vis-collapse-s {
+  .visibility-collapse-s {
     visibility: collapse;
   }
 
-  .vis-bf-vis-s {
+  .backface-visible-s {
     backface-visibility: visible;
   }
 
-  .vis-bf-hid-s {
+  .backface-hidden-s {
     backface-visibility: hidden;
   }
 
@@ -55,23 +55,23 @@
 }
 
 @media screen and (width >= 48em) {
-  .vis-m {
+  .visible-m {
     visibility: visible;
   }
 
-  .vis-hidden-m {
+  .hidden-m {
     visibility: hidden;
   }
 
-  .vis-collapse-m {
+  .visibility-collapse-m {
     visibility: collapse;
   }
 
-  .vis-bf-vis-m {
+  .backface-visible-m {
     backface-visibility: visible;
   }
 
-  .vis-bf-hid-m {
+  .backface-hidden-m {
     backface-visibility: hidden;
   }
 
@@ -84,23 +84,23 @@
 }
 
 @media screen and (width >= 96em) {
-  .vis-l {
+  .visible-l {
     visibility: visible;
   }
 
-  .vis-hidden-l {
+  .hidden-l {
     visibility: hidden;
   }
 
-  .vis-collapse-l {
+  .visibility-collapse-l {
     visibility: collapse;
   }
 
-  .vis-bf-vis-l {
+  .backface-visible-l {
     backface-visibility: visible;
   }
 
-  .vis-bf-hid-l {
+  .backface-hidden-l {
     backface-visibility: hidden;
   }
 
