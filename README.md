@@ -1,113 +1,92 @@
-# css-visibility 0.0.6
+# css-visibility
 
-Css module of single purpose classes for visibility
+Functional CSS for visibility
 
-#### Stats
+## Filesize
 
-405 | 24 | 36
----|---|---
-bytes | selectors | declarations
+| File | Size |
+|------|------|
+| `dist/visibility.css` | 1755 bytes |
+| `dist/visibility.min.css` | 1343 bytes (260 Gzipped) |
 
-## Installation
+## Install
 
-#### With [npm](https://npmjs.com)
-
-```
-npm install --save-dev css-visibility
-```
-
-#### With Git
-
-```
-git clone https://github.com/tachyons-css/css-visibility
+```sh
+npm install css-visibility
 ```
 
 ## Usage
 
-#### Using with [PostCSS](https://github.com/postcss/postcss)
-
-Import the css module
+### Import
 
 ```css
 @import "css-visibility";
 ```
 
-Then process the CSS using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
-
-```sh
-$ npm i -g tachyons-cli
-$ tachyons-cli path/to/css-file.css > dist/t.css
-```
-
-#### Using the CSS
-
-The built CSS is located in the `css` directory. It contains an unminified and minified version.
-You can either cut and paste that css or link to it directly in your html.
+### CDN
 
 ```html
-<link rel="stylesheet" href="path/to/module/css/css-visibility">
+<link rel="stylesheet" href="https://unpkg.com/css-visibility/dist/visibility.min.css">
 ```
 
-#### Development
+### Direct
 
-The source CSS files can be found in the `src` directory.
-Running `$ npm start` will process the source CSS and place the built CSS in the `css` directory.
-
-## The CSS
-
-```css
-/*
-   VISIBILITY
-*/
-.vis { visibility: visible; }
-.vis-hidden { visibility: hidden; }
-.vis-collapse { visibility: collapse; }
-.vis-bf-vis { backface-visibility: visible; }
-.vis-bf-hid { backface-visibility: hidden; }
-/*
-    Text that is hidden but accessible
-    Ref: http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
-*/
-.clip { position: fixed !important; _position: absolute !important; clip: rect( 1px 1px 1px 1px ); /* IE6, IE7 */ clip: rect( 1px, 1px, 1px, 1px ); }
-@media screen and (min-width: 48em) {
- .vis-ns { visibility: visible; }
- .vis-hidden-ns { visibility: hidden; }
- .vis-collapse-ns { visibility: collapse; }
- .vis-bf-vis-ns { backface-visibility: visible; }
- .vis-bf-hid-ns { backface-visibility: hidden; }
- .clip-ns { position: fixed !important; position: absolute !important; clip: rect( 1px 1px 1px 1px ); /* IE6, IE7 */ clip: rect( 1px, 1px, 1px, 1px ); }
-}
-@media screen and (min-width:48em) and (max-width: 64em) {
- .vis-m { visibility: visible; }
- .vis-hidden-m { visibility: hidden; }
- .vis-collapse-m { visibility: collapse; }
- .vis-bf-vis-m { backface-visibility: visible; }
- .vis-bf-hid-m { backface-visibility: hidden; }
- .clip-m { position: fixed !important; position: absolute !important; clip: rect( 1px 1px 1px 1px ); /* IE6, IE7 */ clip: rect( 1px, 1px, 1px, 1px ); }
-}
-@media screen and (min-width: 64em) {
- .vis-l { visibility: visible; }
- .vis-hidden-l { visibility: hidden; }
- .vis-collapse-l { visibility: collapse; }
- .vis-bf-vis-l { backface-visibility: visible; }
- .vis-bf-hid-l { backface-visibility: hidden; }
- .clip-l { position: fixed !important; position: absolute !important; clip: rect( 1px 1px 1px 1px ); /* IE6, IE7 */ clip: rect( 1px, 1px, 1px, 1px ); }
-}
+```html
+<link rel="stylesheet" href="path/to/css-visibility/dist/visibility.min.css">
 ```
 
-## Contributing
+## Classes
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+| Class   | Value                    |
+|---------|--------------------------|
+| `.visible` | `visibility: visible;` |
+| `.hidden` | `visibility: hidden;` |
+| `.visibility-collapse` | `visibility: collapse;` |
+| `.backface-visible` | `backface-visibility: visible;` |
+| `.backface-hidden` | `backface-visibility: hidden;` |
+| `.clip` | `clip: rect(1px 1px 1px 1px);   clip: rect(1px, 1px, 1px, 1px);   _position: absolute !important;   position: fixed !important;` |
+| `.visible-s` | `visibility: visible;` |
+| `.hidden-s` | `visibility: hidden;` |
+| `.visibility-collapse-s` | `visibility: collapse;` |
+| `.backface-visible-s` | `backface-visibility: visible;` |
+| `.backface-hidden-s` | `backface-visibility: hidden;` |
+| `.clip-s` | `clip: rect(1px 1px 1px 1px);     clip: rect(1px, 1px, 1px, 1px);     _position: absolute !important;     position: fixed !important;` |
+| `.visible-m` | `visibility: visible;` |
+| `.hidden-m` | `visibility: hidden;` |
+| `.visibility-collapse-m` | `visibility: collapse;` |
+| `.backface-visible-m` | `backface-visibility: visible;` |
+| `.backface-hidden-m` | `backface-visibility: hidden;` |
+| `.clip-m` | `clip: rect(1px 1px 1px 1px);     clip: rect(1px, 1px, 1px, 1px);     _position: absolute !important;     position: fixed !important;` |
+| `.visible-l` | `visibility: visible;` |
+| `.hidden-l` | `visibility: hidden;` |
+| `.visibility-collapse-l` | `visibility: collapse;` |
+| `.backface-visible-l` | `backface-visibility: visible;` |
+| `.backface-hidden-l` | `backface-visibility: hidden;` |
+| `.clip-l` | `clip: rect(1px 1px 1px 1px);     clip: rect(1px, 1px, 1px, 1px);     _position: absolute !important;     position: fixed !important;` |
 
-## Authors
+### Responsive
 
-* [mrmrs](http://mrmrs.io)
-* [johno](http://johnotander.com)
+Responsive variants are available for each class with the following suffixes:
+
+| Suffix | Media Query              |
+|--------|--------------------------|
+| `-s`   | `min-width: 32em`        |
+| `-m`   | `min-width: 48em`        |
+| `-l`   | `min-width: 96em`        |
+
+Example: `.visible-m` applies the property at the medium breakpoint and above.
+
+## Building
+
+```sh
+npm run build
+```
+
+Processes `src/visibility.css` with [Lightning CSS](https://lightningcss.dev) and outputs to `dist/`.
+
+- `dist/visibility.css` — formatted
+- `dist/visibility.min.css` — minified
 
 ## License
 
-ISC
+MIT
