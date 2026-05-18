@@ -6,8 +6,8 @@ Functional CSS for visibility
 
 | File | Size |
 |------|------|
-| `dist/visibility.css` | 1755 bytes |
-| `dist/visibility.min.css` | 1343 bytes (260 Gzipped) |
+| `dist/visibility.css` | 1683 bytes |
+| `dist/visibility.min.css` | 1271 bytes (257 Gzipped) |
 
 ## Install
 
@@ -39,29 +39,29 @@ npm install css-visibility
 
 | Class   | Value                    |
 |---------|--------------------------|
-| `.visible` | `visibility: visible;` |
-| `.hidden` | `visibility: hidden;` |
-| `.visibility-collapse` | `visibility: collapse;` |
-| `.backface-visible` | `backface-visibility: visible;` |
-| `.backface-hidden` | `backface-visibility: hidden;` |
+| `.vis` | `visibility: visible;` |
+| `.vis-hidden` | `visibility: hidden;` |
+| `.vis-collapse` | `visibility: collapse;` |
+| `.vis-bf-vis` | `backface-visibility: visible;` |
+| `.vis-bf-hid` | `backface-visibility: hidden;` |
 | `.clip` | `clip: rect(1px 1px 1px 1px);   clip: rect(1px, 1px, 1px, 1px);   _position: absolute !important;   position: fixed !important;` |
-| `.visible-s` | `visibility: visible;` |
-| `.hidden-s` | `visibility: hidden;` |
-| `.visibility-collapse-s` | `visibility: collapse;` |
-| `.backface-visible-s` | `backface-visibility: visible;` |
-| `.backface-hidden-s` | `backface-visibility: hidden;` |
+| `.vis-s` | `visibility: visible;` |
+| `.vis-hidden-s` | `visibility: hidden;` |
+| `.vis-collapse-s` | `visibility: collapse;` |
+| `.vis-bf-vis-s` | `backface-visibility: visible;` |
+| `.vis-bf-hid-s` | `backface-visibility: hidden;` |
 | `.clip-s` | `clip: rect(1px 1px 1px 1px);     clip: rect(1px, 1px, 1px, 1px);     _position: absolute !important;     position: fixed !important;` |
-| `.visible-m` | `visibility: visible;` |
-| `.hidden-m` | `visibility: hidden;` |
-| `.visibility-collapse-m` | `visibility: collapse;` |
-| `.backface-visible-m` | `backface-visibility: visible;` |
-| `.backface-hidden-m` | `backface-visibility: hidden;` |
+| `.vis-m` | `visibility: visible;` |
+| `.vis-hidden-m` | `visibility: hidden;` |
+| `.vis-collapse-m` | `visibility: collapse;` |
+| `.vis-bf-vis-m` | `backface-visibility: visible;` |
+| `.vis-bf-hid-m` | `backface-visibility: hidden;` |
 | `.clip-m` | `clip: rect(1px 1px 1px 1px);     clip: rect(1px, 1px, 1px, 1px);     _position: absolute !important;     position: fixed !important;` |
-| `.visible-l` | `visibility: visible;` |
-| `.hidden-l` | `visibility: hidden;` |
-| `.visibility-collapse-l` | `visibility: collapse;` |
-| `.backface-visible-l` | `backface-visibility: visible;` |
-| `.backface-hidden-l` | `backface-visibility: hidden;` |
+| `.vis-l` | `visibility: visible;` |
+| `.vis-hidden-l` | `visibility: hidden;` |
+| `.vis-collapse-l` | `visibility: collapse;` |
+| `.vis-bf-vis-l` | `backface-visibility: visible;` |
+| `.vis-bf-hid-l` | `backface-visibility: hidden;` |
 | `.clip-l` | `clip: rect(1px 1px 1px 1px);     clip: rect(1px, 1px, 1px, 1px);     _position: absolute !important;     position: fixed !important;` |
 
 ### Responsive
@@ -74,7 +74,7 @@ Responsive variants are available for each class with the following suffixes:
 | `-m`   | `min-width: 48em`        |
 | `-l`   | `min-width: 96em`        |
 
-Example: `.visible-m` applies the property at the medium breakpoint and above.
+Example: `.vis-m` applies the property at the medium breakpoint and above.
 
 ## Building
 
